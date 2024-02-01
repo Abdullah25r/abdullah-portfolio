@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Top Example</title>
+    <style>
+        body {
+            height: 1500px; /* Add some content to make the page scrollable */
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your page content goes here -->
+
+    <footer>
+        <button onclick="scrollToTop()">Home</button>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            // Scroll to the top of the page
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Optional: Adds a smooth scrolling effect
+            });
+        }
+    </script>
+</body>
+</html>
+
